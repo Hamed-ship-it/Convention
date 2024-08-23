@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Step 1: Set values for height in inches and weight in pounds
+let heightInInches = 70; // example height (e.g., 70 inches)
+let weightInPounds = 150; // example weight (e.g., 150 pounds)
+
+// Step 2: Convert height to centimeters
+let heightInCentimeters = heightInInches * 2.54;
+
+// Step 3: Convert weight to kilos
+let weightInKilos = weightInPounds / 2.2046;
+
+// Step 4: Output the converted results to the console
+console.log("Height in centimeters:", heightInCentimeters.toFixed(2));
+console.log("Weight in kilos:", weightInKilos.toFixed(2));
+
+// Step 5: Calculate the BMI
+let heightInMeters = heightInCentimeters / 100; // converting cm to meters
+let bmi = weightInKilos / (heightInMeters * heightInMeters);
+
+// Step 6: Output the BMI to the console
+console.log("BMI:", bmi.toFixed(2));
+    </script>
+</body>
+</html>
